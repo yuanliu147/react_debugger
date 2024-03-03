@@ -266,7 +266,7 @@ export function jsx(type, config, maybeKey) {
     ref,
     undefined,
     undefined,
-    ReactCurrentOwner.current,
+    ReactCurrentOwner?.current,
     props,
   );
 }
@@ -351,7 +351,7 @@ export function jsxDEV(type, config, maybeKey, source, self) {
       ref,
       self,
       source,
-      ReactCurrentOwner.current,
+      ReactCurrentOwner?.current,
       props,
     );
   }

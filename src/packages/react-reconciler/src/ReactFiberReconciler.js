@@ -698,7 +698,7 @@ function getCurrentFiberForDevTools() {
 
 export function injectIntoDevTools(devToolsConfig) {
   const { findFiberByHostInstance } = devToolsConfig;
-  const { ReactCurrentDispatcher } = ReactSharedInternals;
+  const { ReactCurrentDispatcher } = ReactSharedInternals || {};
 
   return injectInternals({
     bundleType: devToolsConfig.bundleType,

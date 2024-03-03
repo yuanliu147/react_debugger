@@ -11,7 +11,7 @@ import ReactSharedInternals from "shared/ReactSharedInternals";
 import { getStackByFiberInDevAndProd } from "./ReactFiberComponentStack";
 import getComponentNameFromFiber from "react-reconciler/src/getComponentNameFromFiber";
 
-const ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+const ReactDebugCurrentFrame = ReactSharedInternals?.ReactDebugCurrentFrame;
 
 export let current = null;
 export let isRendering = false;

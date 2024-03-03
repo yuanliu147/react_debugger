@@ -21,7 +21,7 @@ import { disableLogs, reenableLogs } from "shared/ConsolePatchingDev";
 
 import ReactSharedInternals from "shared/ReactSharedInternals";
 
-const { ReactCurrentDispatcher } = ReactSharedInternals;
+const { ReactCurrentDispatcher } = ReactSharedInternals || {};
 
 let prefix;
 export function describeBuiltInComponentFrame(name, source, ownerFn) {

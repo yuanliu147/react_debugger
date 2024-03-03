@@ -16,6 +16,9 @@ export default defineConfig({
       '@': path.resolve('src')
     },
   },
+  build: {
+    sourcemap: true,
+  },
   define: {
     __DEV__: true,
     __EXPERIMENTAL__: true,

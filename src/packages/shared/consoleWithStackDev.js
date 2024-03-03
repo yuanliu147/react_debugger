@@ -40,7 +40,7 @@ function printWarning(level, format, args) {
   // When changing this logic, you might want to also
   // update consoleWithStackDev.www.js as well.
   if (__DEV__) {
-    const ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+    const ReactDebugCurrentFrame = ReactSharedInternals?.ReactDebugCurrentFrame;
     const stack = ReactDebugCurrentFrame.getStackAddendum();
     if (stack !== "") {
       format += "%s";

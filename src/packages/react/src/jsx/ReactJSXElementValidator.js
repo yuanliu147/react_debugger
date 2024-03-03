@@ -30,7 +30,7 @@ import { describeUnknownElementTypeFrameInDEV } from "shared/ReactComponentStack
 import ReactSharedInternals from "shared/ReactSharedInternals";
 
 const ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
-const ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+const ReactDebugCurrentFrame = ReactSharedInternals?.ReactDebugCurrentFrame;
 
 const REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
 

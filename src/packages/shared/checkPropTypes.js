@@ -14,7 +14,7 @@ import { describeUnknownElementTypeFrameInDEV } from "shared/ReactComponentStack
 import ReactSharedInternals from "shared/ReactSharedInternals";
 import hasOwnProperty from "shared/hasOwnProperty";
 
-const ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+const ReactDebugCurrentFrame = ReactSharedInternals?.ReactDebugCurrentFrame;
 
 function setCurrentlyValidatingElement(element) {
   if (__DEV__) {
